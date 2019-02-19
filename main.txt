@@ -1,0 +1,79 @@
+package com.example.climate.radiobuttonfirman;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+
+import android.view.View.OnClickListener;
+import android.widget.RadioButton;
+import android.widget.Button;
+import android.widget.TextView;
+
+public class MainActivity extends AppCompatActivity implements OnClickListener {
+    RadioButton radioButton1,radioButton2,radioButton3,radioButton4,radioButton5,radioButton6,radioButton7,radioButton8;
+    TextView txtwarna;
+    Button btnexit;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        radioButton1=(RadioButton)findViewById(R.id.radioButton1);
+        radioButton2=(RadioButton)findViewById(R.id.radioButton2);
+        radioButton3=(RadioButton)findViewById(R.id.radioButton3);
+        radioButton4=(RadioButton)findViewById(R.id.radioButton4);
+        radioButton5=(RadioButton)findViewById(R.id.radioButton5);
+        radioButton6=(RadioButton)findViewById(R.id.radioButton6);
+        radioButton7=(RadioButton)findViewById(R.id.radioButton7);
+        radioButton8=(RadioButton)findViewById(R.id.radioButton8);
+        txtwarna=(TextView) findViewById(R.id.txtwarna);
+        btnexit=(Button)findViewById(R.id.btnexit);
+        radioButton1.setOnClickListener(this);
+        radioButton2.setOnClickListener(this);
+        radioButton3.setOnClickListener(this);
+        radioButton4.setOnClickListener(this);
+        radioButton5.setOnClickListener(this);
+        radioButton6.setOnClickListener(this);
+        radioButton7.setOnClickListener(this);
+        radioButton8.setOnClickListener(this);
+        btnexit.setOnClickListener(this);
+    }
+    @Override
+    public void  onClick(View v){
+
+        if(v==btnexit)
+        {
+            finish();
+        }
+        else if (v==radioButton1){
+            txtwarna.setBackgroundResource(R.color.backRed);
+        }
+
+        else if (v==radioButton1){
+            txtwarna.setBackgroundResource(R.color.backRed);
+        }
+
+        else if (v==radioButton2){
+            txtwarna.setBackgroundResource(R.color.backBlue);
+        }
+
+        else if (v==radioButton3){
+            txtwarna.setBackgroundResource(R.color.backGreen);
+        }
+        else if (v==radioButton4){
+            txtwarna.setBackgroundResource(R.color.backWhite);
+        }
+        else if (v==radioButton5){
+            txtwarna.setBackgroundResource(R.color.backDark);
+        }
+        else if (v==radioButton6){
+            txtwarna.setBackgroundResource(R.color.backPink);
+        }
+
+        else if (v==radioButton7) {
+            txtwarna.setBackgroundResource(R.color.backCayon);
+        }
+        else if (v==radioButton8) {
+            txtwarna.setBackgroundResource(R.color.backYellow);
+        }
+    }
+}

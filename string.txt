@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">RadioButtonFirman</string>
+    <string name="btnexit">Exit</string>
+    <string name="txtwarna">Warna yang dipilih</string>
+    <color name="backBlue">#0000FF</color>
+    <color name="backRed">#FF0000</color>
+    <color name="backGreen">#00FF00</color>
+    <color name="backWhite">#FFF</color>
+    <color name="backDark">#000</color>
+    <color name="backPink">#FF4081</color>
+    <color name="backCayon">#2FfFFF</color>
+    <color name="backYellow">#FFF81</color>
+
+</resources>
